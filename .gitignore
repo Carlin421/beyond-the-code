@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.slidev/
+qa-*/
+qa-*.png
+Carlin_Hou_Internship_Presentation.pdf
+.DS_Store
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
