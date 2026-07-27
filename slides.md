@@ -95,6 +95,11 @@ class: slide-routine
       <div><h2>Deep work</h2><p>Demos · docs · architecture · code</p></div>
     </section>
     <section>
+      <span>recurring</span>
+      <code>align()</code>
+      <div><h2>Team alignment</h2><p>Lewis (CTO) 1:1 · Taiwan engineers + PM weekly</p></div>
+    </section>
+    <section>
       <span>lunch</span>
       <code>reset()</code>
       <div><h2>Recharge</h2><p>Weekend meal prep · short nap</p></div>
