@@ -125,6 +125,32 @@
   height: 100%;
 }
 
+.embedded-site-frame {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.embedded-site-frame iframe {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border: 1px solid var(--rule-strong);
+  background: #000;
+}
+
+.embedded-link {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.embedded-link a {
+  color: var(--blue);
+}
+
 .slidev-layout .media-frame__surface {
   border: 1px solid var(--rule-strong) !important;
   border-radius: 0 !important;

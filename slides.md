@@ -28,16 +28,6 @@ class: slide-cover
   </div>
 </main>
 
-<!--
-Timing: 0:20
-
-Good afternoon. I’m Carlin Hou, a software engineering intern at Universal Processing. Today I want to go beyond a list of features. I’ll share three AI projects, the business problems behind them, what I personally contributed, and how AI has changed the way I work as an engineer.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided Universal Processing logo, accessed 2026-07-27.
-- Universal Processing official website, https://www.letsgoup.com/, accessed 2026-07-27.
--->
 
 ---
 class: slide-whoami
@@ -73,19 +63,9 @@ class: slide-whoami
     </section>
   </div>
 </div>
-
 <p class="previous-context"><span>Taiwan → New York City</span>: The environment changed quickly; my willingness to adapt did not.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>02</span></footer>
 
-<!--
-Timing: 0:45
-
-Before the projects, here is a little context about me. My background combines business and information systems, so I naturally look at software from two sides: how it works, and how it supports users, operations, and company goals. A few months before this internship, I was finishing military service in Taiwan and doing interviews late at night. Then I arrived in New York and joined Universal Processing. The environment changed quickly, but my willingness to adapt did not. That journey is only a small part of the story. The rest is about how I translated business needs into products the team could discuss, test, and improve.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided photograph, IMG_3259.jpeg, accessed 2026-07-27.
--->
 
 ---
 class: slide-routine
@@ -130,14 +110,6 @@ class: slide-routine
 <p class="takeaway">Align early. Build deeply. Verify before leaving.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>03</span></footer>
 
-<!--
-Timing: 0:40
-
-I usually arrive before 8:30—often the first one there—because I’m a morning person. I begin with email, chat, and Jira, catching the overnight handoff from Taiwan and setting my plan. Before meetings, I prepare demos or documentation. Morning is my best focus time, so I use it for architecture and coding. At lunch, I eat the meal I prepared over the weekend and take a short nap. The afternoon is for QA, organizing and documenting work, then code review, more coding, and a final check against the plan.
-
-[Sources]
-- User-provided description of a typical workday, accessed 2026-07-27.
--->
 
 ---
 class: slide-process
@@ -176,16 +148,6 @@ class: slide-process
 <p class="takeaway">Development starts with shared understanding.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>04</span></footer>
 
-<!--
-Timing: 0:45
-
-For me, each project started before the code. I reviewed the business problem, clarified open requirements, and translated the work into Jira tasks. The board made ownership and progress visible. Weekly notes recorded decisions, feedback, and what had to happen next. Then I built prototypes, tested them, and showed progress in meetings. Sharing work early helped the team correct assumptions before we invested more time. Feedback was not the final step; it became part of every development cycle. That process helped turn an unclear request into work the team could discuss, test, and improve together.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided Jira board screenshot, accessed 2026-07-27.
-- User-provided weekly project-notes screenshot, accessed 2026-07-27.
--->
 
 ---
 class: slide-projects
@@ -226,15 +188,6 @@ class: slide-projects
 <p class="takeaway project-range">The goal: less waiting for merchants and less repetitive work for the team.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>05</span></footer>
 
-<!--
-Timing: 0:35
-
-These projects address three very different delays. Marketing manages reviews for many merchants, across many accounts, while still protecting each business’s voice. Technical support serves merchants nationwide, even though payment problems do not follow office hours. And many salon merchants still manage appointments with paper and pen. I approached each problem differently: a central review dashboard with approval routing, a support assistant that searches company knowledge before answering, and a booking MVP that turns schedules and resources into explicit rules. The common goal is simple: less waiting for merchants and less repetitive work for the team.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided detailed project descriptions, accessed 2026-07-27.
--->
 
 ---
 class: slide-review
@@ -247,13 +200,19 @@ class: slide-review
 
 <div class="project-layout">
   <div class="media-slot project-media">
-    <MediaFrame
-      src="/media/review-system.png"
-      alt="Google Business Profile review response system"
-      label="Add review assistant screenshot"
-      fit="contain"
-      aspect="16 / 10"
-    />
+    <div class="embedded-site-frame">
+      <iframe
+        src="https://replymanager.userve.io/"
+        title="ReplyManager live preview"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+        allowfullscreen
+      ></iframe>
+      <p class="embedded-link">
+        Live link:
+        <a href="https://replymanager.userve.io/" target="_blank" rel="noreferrer">replymanager.userve.io</a>
+      </p>
+    </div>
   </div>
   <div class="project-story">
     <p class="code-caption">// problem → solution → value</p>
@@ -274,15 +233,6 @@ class: slide-review
 
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>06</span></footer>
 
-<!--
-Timing: 1:05
-
-The marketing team manages Google and Yelp reviews for many merchants, often across many accounts. Some business owners are not comfortable replying in English, so the team may need to create a response that still sounds like that specific business. Negative reviews also require a conversation with the owner before anything is posted. That makes the work slow and difficult to scale. I built a management dashboard that brings merchants and review statistics into one place. For a positive review, the team can generate a business-specific reply and post it in a few clicks. For a negative review, the system messages the owner for approval, comments, or edits. The project is still being revised, but the marketing team has been actively testing it and giving feedback for daily use.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided detailed Project 1 description, accessed 2026-07-27.
--->
 
 ---
 class: slide-rag
@@ -311,27 +261,24 @@ class: slide-rag
     <p class="takeaway">The goal: merchants get a first response; support gets a clearer case.</p>
   </div>
   <div class="media-slot project-media">
-    <MediaFrame
-      src="/media/rag-chatbot.png"
-      alt="RAG customer support chatbot"
-      label="Add RAG chatbot screenshot"
-      fit="contain"
-      aspect="4 / 3"
-    />
+    <div class="embedded-site-frame">
+      <iframe
+        src="https://csagent.userve.io/"
+        title="CSAgent live preview"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+        allowfullscreen
+      ></iframe>
+      <p class="embedded-link">
+        Live link:
+        <a href="https://csagent.userve.io/" target="_blank" rel="noreferrer">csagent.userve.io</a>
+      </p>
+    </div>
   </div>
 </div>
 
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>07</span></footer>
 
-<!--
-Timing: 1:10
-
-Our merchants are across the country, and payment never sleeps. A problem can happen at midnight or during a busy hour. If a call is missed, a merchant may lose sales or feel unsupported. At the same time, the support team already has a lot of documentation, but finding the right instruction can take too long. The solution is a chatbot using RAG. In simple terms, ChatGPT knows general information, but it does not know our internal documents, so the system searches structured company knowledge before answering. A phone feature can clarify the problem and send a clearer case to technical support for follow-up. CRM connection is still under development. The goal is a 24/7 first response, clearer explanations, and less search time for both merchants and the support team.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided detailed Project 2 description, accessed 2026-07-27.
--->
 
 ---
 class: slide-booking
@@ -353,7 +300,7 @@ class: slide-booking
     <MediaFrame
       src="/media/salon-booking.png"
       alt="Salon booking assistant interface"
-      label="Add MVP interface screenshot · mock data"
+      label="Current MVP interface · mock data"
       fit="contain"
       aspect="4 / 3"
     />
@@ -364,15 +311,6 @@ class: slide-booking
 <p class="takeaway">Two-week MVP: prove the scheduling rules before building the full system.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>08</span></footer>
 
-<!--
-Timing: 1:00
-
-The salon project began only two weeks ago, so it is clearly an MVP. The problem is very practical: many beauty-salon merchants still use paper and pen to manage appointments. That makes it harder to see staff availability, avoid conflicts, and keep resources organized. I started designing one system that could support chatbot and phone booking, the appointment flow, and an admin view for the owner to manage schedules, staff, rooms, and equipment. My current work is the PRD, data model, matching rules, and MVP workflow. The goal at this stage is not to claim a finished product. It is to prove that the core rules work before we add the complete chat, phone, calendar, notification, and other integrations.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided detailed Project 3 description, accessed 2026-07-27.
--->
 
 ---
 class: slide-evolution
@@ -409,14 +347,6 @@ class: slide-evolution
 <p class="takeaway">The developer’s role is shifting from producing more code to making better decisions.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>09</span></footer>
 
-<!--
-Timing: 1:00
-
-My use of AI changed in three stages. In college, I relied on documentation, sample projects, Stack Overflow, and early AI tools to find patterns and answer narrow questions. During my internship experience in Taiwan, AI became more of a coding partner, but its context was still limited and the results were uneven. In New York, I learned to place AI inside a complete product process. I start from the user need, write a clear specification, break the work into steps, set checks, and review what comes back. Technical experience still matters because I need to understand the code, debug problems, and judge quality. AI makes implementation faster, but it makes direction and judgment more important.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
--->
 
 ---
 class: slide-bottleneck
@@ -437,14 +367,6 @@ class: slide-bottleneck
 <p v-click="2" class="final-reveal">Speed creates value only when the team shares a clear destination.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>10</span></footer>
 
-<!--
-Timing: 0:55
-
-The biggest change is that the bottleneck moved. Before, much of the effort was writing code and increasing implementation speed. In the AI era, the harder questions come earlier: are we solving the right problem, are the requirements clear, and does the result match what users and the business need? My technical background helps me trace the system, debug AI-generated output, and judge code quality. My startup experience helps me see the same product from the viewpoints of a manager, marketing, customer support, and the customer. That combination helps me connect faster implementation to a shared destination instead of treating speed as the goal.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
--->
 
 ---
 class: slide-closing
@@ -470,13 +392,3 @@ class: slide-closing
     />
   </div>
 </div>
-
-<!--
-Timing: 0:45
-
-When I look back on this summer, what matters most is not only the three AI projects. It is how the team taught me to connect business problems, technical decisions, and feedback. I am very grateful to Lewis, Tania, and the entire Universal Processing team for the trust, guidance, and freedom to experiment. I have really enjoyed working with the team, and I would be excited to continue contributing in a larger capacity beyond this internship. There is still a lot I hope to learn, build, and contribute. Thank you.
-
-[Sources]
-- User-provided internship brief, accessed 2026-07-24.
-- User-provided photograph, IMG_5994.jpeg, accessed 2026-07-27.
--->
