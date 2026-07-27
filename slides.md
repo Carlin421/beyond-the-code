@@ -88,6 +88,58 @@ Before the projects, here is a little context about me. My background combines b
 -->
 
 ---
+class: slide-routine
+---
+
+<header class="slide-header">
+  <p class="kicker">01 / Day-to-day</p>
+  <h1>My Best Work Starts Early</h1>
+</header>
+
+<div class="routine-layout">
+  <section class="routine-lead">
+    <p>// why the early start</p>
+    <h2>Morning energy goes to the work that needs the clearest thinking.</h2>
+    <p class="routine-detail">I’m usually in before 8:30—and often first at the office.</p>
+  </section>
+
+  <div class="routine-timeline" aria-label="A typical workday">
+    <section>
+      <span>before 08:30</span>
+      <code>sync()</code>
+      <div><h2>Taiwan handoff</h2><p>Email · chat · Jira · daily plan</p></div>
+    </section>
+    <section>
+      <span>morning</span>
+      <code>focus()</code>
+      <div><h2>Deep work</h2><p>Demos · docs · architecture · code</p></div>
+    </section>
+    <section>
+      <span>lunch</span>
+      <code>reset()</code>
+      <div><h2>Recharge</h2><p>Weekend meal prep · short nap</p></div>
+    </section>
+    <section>
+      <span>afternoon</span>
+      <code>verify()</code>
+      <div><h2>Close the loop</h2><p>QA · docs · code review · plan check</p></div>
+    </section>
+  </div>
+</div>
+
+<p class="takeaway">Align early. Build deeply. Verify before leaving.</p>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>03</span></footer>
+
+<!--
+Timing: 0:40
+
+I usually arrive before 8:30—often the first one there—because I’m a morning person. I begin with email, chat, and Jira, catching the overnight handoff from Taiwan and setting my plan. Before meetings, I prepare demos or documentation. Morning is my best focus time, so I use it for architecture and coding. At lunch, I eat the meal I prepared over the weekend and take a short nap. The afternoon is for QA, organizing and documenting work, then code review, more coding, and a final check against the plan.
+
+[Sources]
+- User-provided description of a typical workday, accessed 2026-07-27.
+-->
+
+---
 class: slide-process
 ---
 
@@ -115,7 +167,7 @@ class: slide-process
 </div>
 
 <p class="takeaway">Development starts with shared understanding.</p>
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>03</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>04</span></footer>
 
 <!--
 Timing: 0:45
@@ -154,7 +206,7 @@ class: slide-projects
 </div>
 
 <p class="takeaway project-range">One technology. Three different product responsibilities.</p>
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>04</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>05</span></footer>
 
 <!--
 Timing: 0:35
@@ -197,7 +249,7 @@ class: slide-review
   </div>
 </div>
 
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>05</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>06</span></footer>
 
 <!--
 Timing: 0:55
@@ -248,7 +300,7 @@ class: slide-rag
   </div>
 </div>
 
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>06</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>07</span></footer>
 
 <!--
 Timing: 0:55
@@ -285,7 +337,7 @@ class: slide-booking
 </div>
 
 <p class="takeaway">When implementation becomes faster, unclear requirements become more expensive.</p>
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>07</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>08</span></footer>
 
 <!--
 Timing: 0:55
@@ -329,7 +381,7 @@ class: slide-evolution
 </div>
 
 <p class="takeaway">The developer’s role is shifting from producing more code to making better decisions.</p>
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>08</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>09</span></footer>
 
 <!--
 Timing: 1:00
@@ -357,7 +409,7 @@ class: slide-bottleneck
 </div>
 
 <p v-click="2" class="final-reveal">Speed creates value only when the team shares a clear destination.</p>
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>09</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>10</span></footer>
 
 <!--
 Timing: 0:55
