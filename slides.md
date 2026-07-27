@@ -199,40 +199,41 @@ class: slide-projects
 <div class="project-columns">
   <article v-click>
     <span>01</span>
-    <div><code>generate()</code><h2>AI Review Assistant</h2></div>
+    <div><code>respond()</code><h2>Merchant Review Dashboard</h2></div>
     <div class="project-brief">
-      <p><span>problem</span>Replies take time and still require judgment.</p>
-      <p><span>solution</span>AI drafts; a person reviews.</p>
+      <p><span>problem</span>Marketing manages Google and Yelp reviews across many merchant accounts.</p>
+      <p><span>solution</span>One dashboard, AI replies, and owner approval for sensitive cases.</p>
     </div>
   </article>
   <article v-click>
     <span>02</span>
-    <div><code>retrieve()</code><h2>Internal Support Chatbot</h2></div>
+    <div><code>support()</code><h2>24/7 Support Assistant</h2></div>
     <div class="project-brief">
-      <p><span>problem</span>Answers are scattered across documents and past cases.</p>
-      <p><span>solution</span>Search trusted knowledge before answering.</p>
+      <p><span>problem</span>Payment issues can happen after hours, when support may miss a call.</p>
+      <p><span>solution</span>RAG chat answers first; phone intake routes a clearer case.</p>
     </div>
   </article>
   <article v-click>
     <span>03 / MVP</span>
     <div><code>coordinate()</code><h2>Salon Booking Assistant</h2></div>
     <div class="project-brief">
-      <p><span>problem</span>A booking depends on staff, time, rooms, and equipment.</p>
-      <p><span>solution</span>Check every rule before proposing a slot.</p>
+      <p><span>problem</span>Many salon merchants still schedule appointments with paper and pen.</p>
+      <p><span>solution</span>One MVP for booking, staff, schedules, and resources.</p>
     </div>
   </article>
 </div>
 
-<p class="takeaway project-range">The common goal: less repetitive work, faster answers, and fewer manual checks.</p>
+<p class="takeaway project-range">The goal: less waiting for merchants and less repetitive work for the team.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>05</span></footer>
 
 <!--
 Timing: 0:35
 
-These projects started with three familiar kinds of friction. Review replies take time, but they still need human judgment. Internal answers exist, but people lose time searching across documents and old cases. Salon booking looks simple until staff, rooms, equipment, and service timing all have to match. The solutions were different: draft with human review, retrieve trusted knowledge before answering, and validate booking rules before suggesting a time. The common goal was practical—reduce repetitive work, make answers easier to reach, and remove manual checks where the product could handle them safely.
+These projects address three very different delays. Marketing manages reviews for many merchants, across many accounts, while still protecting each business’s voice. Technical support serves merchants nationwide, even though payment problems do not follow office hours. And many salon merchants still manage appointments with paper and pen. I approached each problem differently: a central review dashboard with approval routing, a support assistant that searches company knowledge before answering, and a booking MVP that turns schedules and resources into explicit rules. The common goal is simple: less waiting for merchants and less repetitive work for the team.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
+- User-provided detailed project descriptions, accessed 2026-07-27.
 -->
 
 ---
@@ -240,8 +241,8 @@ class: slide-review
 ---
 
 <header class="slide-header">
-  <p class="kicker">Project 01 · Google Business Profile</p>
-  <h1>Reduce Reply Work Without Giving Up Control</h1>
+  <p class="kicker">Project 01 · Merchant review management</p>
+  <h1>One Dashboard for Reviews Across Many Merchants</h1>
 </header>
 
 <div class="project-layout">
@@ -257,16 +258,16 @@ class: slide-review
   <div class="project-story">
     <p class="code-caption">// problem → solution → value</p>
     <div class="impact-story">
-      <p><span>problem</span>Replying across locations is repetitive, but every response still represents the business.</p>
-      <p><span>solution</span>Retrieve the review, draft a response, then keep a person in control of the final reply.</p>
-      <p><span>value</span>Less first-draft effort, with judgment, tone, and accountability preserved.</p>
+      <p><span>problem</span>Marketing manages Google and Yelp reviews across many merchant accounts.</p>
+      <p><span>solution</span>One dashboard tracks merchants; AI posts routine replies and routes negative cases to the owner.</p>
+      <p><span>value</span>Fewer account switches, faster routine replies, and safer handling of sensitive reviews.</p>
     </div>
     <div class="compact-code-flow" aria-label="Review response workflow">
-      <code>retrieve()</code><b>→</b><code>draft()</code><b>→</b><code>review()</code><b>→</b><code>publish()</code>
+      <code>collect()</code><b>→</b><code>draft()</code><b>→</b><code>owner_check()</code><b>→</b><code>post()</code>
     </div>
     <div class="project-evidence">
-      <p><span>contribution</span>OAuth · review retrieval · filters · AI/edit history</p>
-      <p><span>next</span>Approval validation · multi-client workflow</p>
+      <p><span>contribution</span>Dashboard · merchant stats · AI replies · approval flow</p>
+      <p><span>next</span>Revise with MKT feedback · prepare daily workflow</p>
     </div>
   </div>
 </div>
@@ -274,12 +275,13 @@ class: slide-review
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>06</span></footer>
 
 <!--
-Timing: 0:55
+Timing: 1:05
 
-The first problem was repetitive work with real reputational risk. Replying to many Google reviews takes time, but every reply still speaks for the business. I researched the Google Business Profile API and helped build a prototype that retrieves reviews, creates a draft, and records the response history. The important solution was not simply automatic writing. It was a workflow that keeps human review before publishing, especially for negative or sensitive comments. That can reduce first-draft effort while preserving judgment and accountability. The next step is to validate the approval rules and extend the multi-client workflow.
+The marketing team manages Google and Yelp reviews for many merchants, often across many accounts. Some business owners are not comfortable replying in English, so the team may need to create a response that still sounds like that specific business. Negative reviews also require a conversation with the owner before anything is posted. That makes the work slow and difficult to scale. I built a management dashboard that brings merchants and review statistics into one place. For a positive review, the team can generate a business-specific reply and post it in a few clicks. For a negative review, the system messages the owner for approval, comments, or edits. The project is still being revised, but the marketing team has been actively testing it and giving feedback for daily use.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
+- User-provided detailed Project 1 description, accessed 2026-07-27.
 -->
 
 ---
@@ -287,26 +289,26 @@ class: slide-rag
 ---
 
 <header class="slide-header">
-  <p class="kicker">Project 02 · Internal support</p>
-  <h1>Turn Scattered Knowledge Into Faster Answers</h1>
+  <p class="kicker">Project 02 · 24/7 merchant support</p>
+  <h1>Support Problems Don’t Wait for Office Hours</h1>
 </header>
 
 <div class="rag-layout">
   <div class="rag-copy">
     <p class="code-caption">// problem → solution → value</p>
     <div class="impact-story">
-      <p><span>problem</span>Useful answers were spread across documents, project notes, and past cases.</p>
-      <p><span>solution</span>Search company knowledge first, then answer from the retrieved evidence.</p>
-      <p><span>value</span>A faster path to trusted answers, with less repeated searching.</p>
+      <p><span>problem</span>Payment issues can happen at any hour; a missed call can mean lost sales.</p>
+      <p><span>solution</span>RAG searches company documents first; phone intake clarifies and routes the issue.</p>
+      <p><span>value</span>A path toward 24/7 first response, clearer cases, and faster document search.</p>
     </div>
     <div class="compact-code-flow" aria-label="Retrieval augmented generation workflow">
-      <code>question</code><b>→</b><code>retrieve(evidence)</code><b>→</b><code>answer()</code>
+      <code>question</code><b>→</b><code>retrieve(docs)</code><b>→</b><code>answer_or_escalate()</code>
     </div>
     <div class="project-evidence rag-evidence">
-      <p><span>contribution</span>Knowledge integration · hybrid retrieval · evaluation</p>
-      <p><span>next</span>Tune retrieval with internal-user feedback</p>
+      <p><span>contribution</span>Structured knowledge · RAG · phone intake · evaluation</p>
+      <p><span>next</span>CRM connection · more real support data</p>
     </div>
-    <p class="takeaway">Existing team knowledge becomes easier to reuse.</p>
+    <p class="takeaway">The goal: merchants get a first response; support gets a clearer case.</p>
   </div>
   <div class="media-slot project-media">
     <MediaFrame
@@ -322,12 +324,13 @@ class: slide-rag
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>07</span></footer>
 
 <!--
-Timing: 0:55
+Timing: 1:10
 
-The second problem was not missing knowledge. It was that useful answers were spread across documents, project notes, and previous cases, so people had to search repeatedly. The prototype searches company knowledge, retrieves relevant evidence, and then uses that evidence to form an answer. I worked on knowledge integration, semantic and keyword retrieval, and an evaluation interface for quality and latency. The practical value is a faster path to trusted internal answers and a reusable knowledge base. Direct feedback from internal users helped us adjust priorities. Voice, speech-to-text, and text-to-speech remained exploration rather than the finished core workflow.
+Our merchants are across the country, and payment never sleeps. A problem can happen at midnight or during a busy hour. If a call is missed, a merchant may lose sales or feel unsupported. At the same time, the support team already has a lot of documentation, but finding the right instruction can take too long. The solution is a chatbot using RAG. In simple terms, ChatGPT knows general information, but it does not know our internal documents, so the system searches structured company knowledge before answering. A phone feature can clarify the problem and send a clearer case to technical support for follow-up. CRM connection is still under development. The goal is a 24/7 first response, clearer explanations, and less search time for both merchants and the support team.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
+- User-provided detailed Project 2 description, accessed 2026-07-27.
 -->
 
 ---
@@ -336,12 +339,12 @@ class: slide-booking
 
 <header class="slide-header">
   <p class="kicker">Project 03 · Salon booking · MVP</p>
-  <h1>Prevent Booking Conflicts Before They Happen</h1>
+  <h1>Replace Paper Scheduling With One Booking System</h1>
 </header>
 
 <div class="booking-story">
-  <p><span>problem</span>A free time slot can still fail when staff, rooms, or equipment conflict.</p>
-  <p><span>solution / MVP</span>Check the booking rules together before suggesting a time.</p>
+  <p><span>problem</span>Many salon merchants still manage appointments with paper and pen.</p>
+  <p><span>solution / MVP</span>Plan one system for chat, phone, appointments, staff, and resources.</p>
 </div>
 
 <div class="booking-map">
@@ -355,19 +358,20 @@ class: slide-booking
       aspect="4 / 3"
     />
   </div>
-  <div class="constraint constraint-b"><span>room</span><span>chair</span><span>equipment</span><span>planned.calendar</span><span>planned.notifications</span></div>
+  <div class="constraint constraint-b"><span>room</span><span>equipment</span><span>owner.admin</span><span>planned.chat</span><span>planned.phone</span></div>
 </div>
 
-<p class="takeaway">MVP goal: fewer manual checks and less back-and-forth before confirming a booking.</p>
+<p class="takeaway">Two-week MVP: prove the scheduling rules before building the full system.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>08</span></footer>
 
 <!--
-Timing: 0:55
+Timing: 1:00
 
-The third problem looks simple from the customer side: choose a service and find a time. But an open calendar slot may still be invalid if the right employee, room, chair, or equipment is unavailable, or if several services need to happen in sequence. I focused on the PRD, data model, matching logic, and the rules connecting those constraints. The MVP checks those rules together before proposing a time. Its goal is fewer manual checks, less back-and-forth, and fewer scheduling conflicts. Calendar and notification integrations are planned next steps, not completed features.
+The salon project began only two weeks ago, so it is clearly an MVP. The problem is very practical: many beauty-salon merchants still use paper and pen to manage appointments. That makes it harder to see staff availability, avoid conflicts, and keep resources organized. I started designing one system that could support chatbot and phone booking, the appointment flow, and an admin view for the owner to manage schedules, staff, rooms, and equipment. My current work is the PRD, data model, matching rules, and MVP workflow. The goal at this stage is not to claim a finished product. It is to prove that the core rules work before we add the complete chat, phone, calendar, notification, and other integrations.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
+- User-provided detailed Project 3 description, accessed 2026-07-27.
 -->
 
 ---
