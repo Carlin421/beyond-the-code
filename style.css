@@ -144,6 +144,13 @@
   color: var(--muted) !important;
 }
 
+.slidev-layout .media-frame__caption {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
 /* 01 — cover */
 .slidev-layout.slide-cover {
   padding: 0;
@@ -440,11 +447,8 @@
 }
 
 /* 04 — process */
-.process-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 58px;
-  margin-top: 66px;
+.process-stack {
+  margin-top: 28px;
 }
 
 .workflow {
@@ -456,7 +460,7 @@
   min-width: 0;
   border-top: 1px solid var(--rule-strong);
   border-bottom: 1px solid var(--rule);
-  padding: 44px 0;
+  padding: 17px 0;
 }
 
 .workflow span {
@@ -472,21 +476,33 @@
   font-size: 14px;
 }
 
-.process-layout .media-slot {
-  height: 290px;
+.process-media-grid {
+  display: grid;
+  grid-template-columns: 1.44fr 1fr;
+  gap: 26px;
+  margin-top: 22px;
+}
+
+.process-media-grid .media-frame__surface {
+  height: 270px;
+  aspect-ratio: auto !important;
+}
+
+.process-media-grid .media-frame__image {
+  background: #fff;
 }
 
 /* 05 — projects */
 .project-columns {
-  margin-top: 58px;
+  margin-top: 46px;
   border-top: 1px solid var(--rule-strong);
 }
 
 .project-columns article {
   display: grid;
-  grid-template-columns: 78px 394px 1fr;
+  grid-template-columns: 78px 350px 1fr;
   align-items: center;
-  min-height: 118px;
+  min-height: 122px;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -522,6 +538,32 @@
   line-height: 1.25;
 }
 
+.project-brief {
+  display: grid;
+  gap: 8px;
+}
+
+.project-brief p {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 14px;
+  font-size: 15px;
+  line-height: 1.18;
+}
+
+.project-brief span {
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.slide-projects .takeaway {
+  font-size: 21px;
+}
+
 /* 06 — review */
 .project-layout {
   display: grid;
@@ -539,6 +581,56 @@
   min-height: 386px;
   border-left: 1px solid var(--rule);
   padding-left: 46px;
+}
+
+.impact-story {
+  margin-top: 10px;
+  border-top: 1px solid var(--rule-strong);
+}
+
+.impact-story > p {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 14px;
+  border-bottom: 1px solid var(--rule);
+  padding: 11px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.23;
+}
+
+.impact-story > p > span {
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.compact-code-flow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid var(--rule);
+  padding: 13px 0;
+  white-space: nowrap;
+}
+
+.compact-code-flow code {
+  padding: 0;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--white);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.compact-code-flow b {
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 13px;
 }
 
 .vertical-workflow {
@@ -574,7 +666,7 @@
 }
 
 .project-evidence {
-  margin-top: 14px;
+  margin-top: 10px;
   border-top: 1px solid var(--rule);
 }
 
@@ -672,7 +764,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .rag-evidence {
@@ -684,17 +776,34 @@
 }
 
 /* 08 — booking */
-.booking-contribution {
-  margin-top: 18px !important;
-  color: var(--muted);
-  font-size: 14px;
+.booking-story {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  margin-top: 20px;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule);
 }
 
-.booking-contribution span {
-  margin-right: 16px;
+.booking-story p {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 14px;
+  padding: 11px 20px 11px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.booking-story p + p {
+  border-left: 1px solid var(--rule);
+  padding-right: 0;
+  padding-left: 24px;
+}
+
+.booking-story span {
   color: var(--blue);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -703,18 +812,18 @@
 .booking-map {
   display: grid;
   grid-template-columns: 0.72fr 1.4fr 0.72fr;
-  gap: 30px;
+  gap: 26px;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .booking-media {
-  height: 370px;
+  height: 305px;
 }
 
 .constraint {
   display: grid;
-  gap: 22px;
+  gap: 14px;
 }
 
 .constraint span {
@@ -723,7 +832,7 @@
   padding-bottom: 9px;
   color: var(--white);
   font-family: var(--mono);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 650;
 }
 
@@ -747,6 +856,10 @@
 
 .constraint-b span::before {
   left: -30px;
+}
+
+.slide-booking .takeaway {
+  font-size: 20px;
 }
 
 /* 09 — evolution */

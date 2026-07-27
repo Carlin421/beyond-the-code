@@ -148,20 +148,27 @@ class: slide-process
   <h1>The Work Started Before the Code</h1>
 </header>
 
-<div class="process-layout">
-  <div>
+<div class="process-stack">
+  <div class="process-loop">
     <p class="code-caption">// product loop</p>
     <div class="workflow" aria-label="Context to feedback workflow">
       <span>context</span><b>|&gt;</b><span>requirements</span><b>|&gt;</b><span>jira</span><b>|&gt;</b><span>prototype</span><b>|&gt;</b><span>test</span><b>|&gt;</b><span>feedback</span><b>|&gt;</b><span>iterate</span>
     </div>
   </div>
-  <div class="media-slot">
+  <div class="process-media-grid">
     <MediaFrame
-      src="/media/jira-workflow.png"
-      alt="Jira workflow screenshot"
-      label="Add Jira workflow screenshot"
+      src="/media/jira-board.png"
+      alt="Jira board showing internship projects moving from idea to testing"
+      caption="Jira board · requirements become visible, trackable work"
       fit="contain"
-      aspect="16 / 10"
+      aspect="5 / 2"
+    />
+    <MediaFrame
+      src="/media/weekly-notes.png"
+      alt="Weekly project notes documenting feedback and next steps"
+      caption="Weekly notes · decisions, feedback, and next steps"
+      fit="contain"
+      aspect="8 / 5"
     />
   </div>
 </div>
@@ -172,10 +179,12 @@ class: slide-process
 <!--
 Timing: 0:45
 
-For me, each project started before the code. I reviewed project descriptions and company knowledge, clarified open requirements, and translated them into Jira tasks. Then I designed and built prototypes, tested them, and showed progress in weekly meetings. One-on-ones with my manager helped me understand the reasoning behind decisions. Sharing work early created business value because the team could correct assumptions before we invested more time. Feedback was not the final step. It became part of every development cycle. That process helped move unclear ideas toward systems the team could evaluate together.
+For me, each project started before the code. I reviewed the business problem, clarified open requirements, and translated the work into Jira tasks. The board made ownership and progress visible. Weekly notes recorded decisions, feedback, and what had to happen next. Then I built prototypes, tested them, and showed progress in meetings. Sharing work early helped the team correct assumptions before we invested more time. Feedback was not the final step; it became part of every development cycle. That process helped turn an unclear request into work the team could discuss, test, and improve together.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
+- User-provided Jira board screenshot, accessed 2026-07-27.
+- User-provided weekly project-notes screenshot, accessed 2026-07-27.
 -->
 
 ---
@@ -184,34 +193,43 @@ class: slide-projects
 
 <header class="slide-header">
   <p class="kicker">03 / The work</p>
-  <h1>Three Projects. Three Different Problems.</h1>
+  <h1>Each Project Started With a Real Bottleneck</h1>
 </header>
 
 <div class="project-columns">
   <article v-click>
     <span>01</span>
     <div><code>generate()</code><h2>AI Review Assistant</h2></div>
-    <p>Content generation with human control.</p>
+    <div class="project-brief">
+      <p><span>problem</span>Replies take time and still require judgment.</p>
+      <p><span>solution</span>AI drafts; a person reviews.</p>
+    </div>
   </article>
   <article v-click>
     <span>02</span>
     <div><code>retrieve()</code><h2>Internal Support Chatbot</h2></div>
-    <p>Trusted retrieval and grounded answers.</p>
+    <div class="project-brief">
+      <p><span>problem</span>Answers are scattered across documents and past cases.</p>
+      <p><span>solution</span>Search trusted knowledge before answering.</p>
+    </div>
   </article>
   <article v-click>
     <span>03 / MVP</span>
     <div><code>coordinate()</code><h2>Salon Booking Assistant</h2></div>
-    <p>Business-rule reasoning and resource coordination.</p>
+    <div class="project-brief">
+      <p><span>problem</span>A booking depends on staff, time, rooms, and equipment.</p>
+      <p><span>solution</span>Check every rule before proposing a slot.</p>
+    </div>
   </article>
 </div>
 
-<p class="takeaway project-range">One technology. Three different product responsibilities.</p>
+<p class="takeaway project-range">The common goal: less repetitive work, faster answers, and fewer manual checks.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>05</span></footer>
 
 <!--
 Timing: 0:35
 
-These three projects used AI for three different jobs. The review assistant generated content while keeping a person in control. The support chatbot retrieved trusted company knowledge. The salon assistant coordinated several business rules. My contribution was different in each project, from API research and retrieval work to PRD development and data modeling. The salon project is an MVP. It validates the core logic and workflow; it is not a finished production system. The range taught me that AI is not one generic solution. Each product needs a different responsibility, risk model, and definition of success.
+These projects started with three familiar kinds of friction. Review replies take time, but they still need human judgment. Internal answers exist, but people lose time searching across documents and old cases. Salon booking looks simple until staff, rooms, equipment, and service timing all have to match. The solutions were different: draft with human review, retrieve trusted knowledge before answering, and validate booking rules before suggesting a time. The common goal was practical—reduce repetitive work, make answers easier to reach, and remove manual checks where the product could handle them safely.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
@@ -223,7 +241,7 @@ class: slide-review
 
 <header class="slide-header">
   <p class="kicker">Project 01 · Google Business Profile</p>
-  <h1>Human Review Stays in the Reply Workflow</h1>
+  <h1>Reduce Reply Work Without Giving Up Control</h1>
 </header>
 
 <div class="project-layout">
@@ -237,15 +255,19 @@ class: slide-review
     />
   </div>
   <div class="project-story">
-    <p class="code-caption">// designed approval workflow</p>
-    <div class="vertical-workflow six-step" aria-label="Review response workflow">
-      <span>retrieve()</span><b>→</b><span>generate()</span><b>→</b><span>review()</span><b>→</b><span>edit()</span><b>→</b><span>publish()</span><b>→</b><span>record()</span>
+    <p class="code-caption">// problem → solution → value</p>
+    <div class="impact-story">
+      <p><span>problem</span>Replying across locations is repetitive, but every response still represents the business.</p>
+      <p><span>solution</span>Retrieve the review, draft a response, then keep a person in control of the final reply.</p>
+      <p><span>value</span>Less first-draft effort, with judgment, tone, and accountability preserved.</p>
+    </div>
+    <div class="compact-code-flow" aria-label="Review response workflow">
+      <code>retrieve()</code><b>→</b><code>draft()</code><b>→</b><code>review()</code><b>→</b><code>publish()</code>
     </div>
     <div class="project-evidence">
       <p><span>contribution</span>OAuth · review retrieval · filters · AI/edit history</p>
       <p><span>next</span>Approval validation · multi-client workflow</p>
     </div>
-    <p class="takeaway">Useful automation increases speed<br>without removing accountability.</p>
   </div>
 </div>
 
@@ -254,7 +276,7 @@ class: slide-review
 <!--
 Timing: 0:55
 
-The first project addressed a clear business problem: replying to many Google reviews takes time, but every reply still represents the company. I researched the Google Business Profile API and helped design and implement the prototype workflow around OAuth, business locations, review retrieval, filters, AI drafts, and response history. The key product decision was to keep human review and editing before publishing, especially for negative or sensitive reviews. That creates a path toward faster, more consistent drafts without giving up accountability. The next step is to validate the approval rules and extend the multi-client workflow. Yelp remains only a possible future direction, not a completed or confirmed integration.
+The first problem was repetitive work with real reputational risk. Replying to many Google reviews takes time, but every reply still speaks for the business. I researched the Google Business Profile API and helped build a prototype that retrieves reviews, creates a draft, and records the response history. The important solution was not simply automatic writing. It was a workflow that keeps human review before publishing, especially for negative or sensitive comments. That can reduce first-draft effort while preserving judgment and accountability. The next step is to validate the approval rules and extend the multi-client workflow.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
@@ -266,28 +288,25 @@ class: slide-rag
 
 <header class="slide-header">
   <p class="kicker">Project 02 · Internal support</p>
-  <h1>The Chatbot Searches Before It Answers</h1>
+  <h1>Turn Scattered Knowledge Into Faster Answers</h1>
 </header>
 
 <div class="rag-layout">
   <div class="rag-copy">
-    <p class="code-caption">// grounded answer + evaluation pipeline</p>
-    <div class="rag-pipeline" aria-label="Retrieval augmented generation workflow">
-      <span>question</span><b>→</b><span>retrieve(evidence)</span><b>→</b><span>generate(grounded_answer)</span><b>→</b><span>evaluate()</span>
+    <p class="code-caption">// problem → solution → value</p>
+    <div class="impact-story">
+      <p><span>problem</span>Useful answers were spread across documents, project notes, and past cases.</p>
+      <p><span>solution</span>Search company knowledge first, then answer from the retrieved evidence.</p>
+      <p><span>value</span>A faster path to trusted answers, with less repeated searching.</p>
     </div>
-    <div class="rag-labels">
-      <span>Semantic retrieval</span>
-      <span>Keyword retrieval</span>
-      <span>Quality + latency evaluation</span>
-      <span>Chat + voice workflows</span>
-      <span>Speech-to-text · explored</span>
-      <span>Text-to-speech · explored</span>
+    <div class="compact-code-flow" aria-label="Retrieval augmented generation workflow">
+      <code>question</code><b>→</b><code>retrieve(evidence)</code><b>→</b><code>answer()</code>
     </div>
     <div class="project-evidence rag-evidence">
       <p><span>contribution</span>Knowledge integration · hybrid retrieval · evaluation</p>
       <p><span>next</span>Tune retrieval with internal-user feedback</p>
     </div>
-    <p class="takeaway">The best technical idea is not always<br>the most useful product decision.</p>
+    <p class="takeaway">Existing team knowledge becomes easier to reuse.</p>
   </div>
   <div class="media-slot project-media">
     <MediaFrame
@@ -305,7 +324,7 @@ class: slide-rag
 <!--
 Timing: 0:55
 
-The second project solved a different problem. Useful internal answers already existed, but they were spread across documents, project descriptions, and previous cases. The prototype searched company knowledge, retrieved evidence, and used that evidence to produce a grounded answer. I worked on knowledge integration, semantic and keyword retrieval, and an evaluation interface for answer quality and latency. The business value is faster access to trusted knowledge and less repetitive searching. Because internal users were easy to reach, I could show prototypes and get direct feedback. That feedback changed priorities. Chat and voice workflows, including speech-to-text and text-to-speech, were explored rather than presented as a finished core workflow.
+The second problem was not missing knowledge. It was that useful answers were spread across documents, project notes, and previous cases, so people had to search repeatedly. The prototype searches company knowledge, retrieves relevant evidence, and then uses that evidence to form an answer. I worked on knowledge integration, semantic and keyword retrieval, and an evaluation interface for quality and latency. The practical value is a faster path to trusted internal answers and a reusable knowledge base. Direct feedback from internal users helped us adjust priorities. Voice, speech-to-text, and text-to-speech remained exploration rather than the finished core workflow.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
@@ -317,10 +336,13 @@ class: slide-booking
 
 <header class="slide-header">
   <p class="kicker">Project 03 · Salon booking · MVP</p>
-  <h1>The Salon MVP Starts With Business Rules</h1>
+  <h1>Prevent Booking Conflicts Before They Happen</h1>
 </header>
 
-<p class="booking-contribution"><span>contribution</span>PRD · data model · matching rules · system constraints</p>
+<div class="booking-story">
+  <p><span>problem</span>A free time slot can still fail when staff, rooms, or equipment conflict.</p>
+  <p><span>solution / MVP</span>Check the booking rules together before suggesting a time.</p>
+</div>
 
 <div class="booking-map">
   <div class="constraint constraint-a"><span>service.duration</span><span>employee.skills</span><span>staff.schedule</span><span>multiService[]</span><span>addOns</span></div>
@@ -336,13 +358,13 @@ class: slide-booking
   <div class="constraint constraint-b"><span>room</span><span>chair</span><span>equipment</span><span>planned.calendar</span><span>planned.notifications</span></div>
 </div>
 
-<p class="takeaway">When implementation becomes faster, unclear requirements become more expensive.</p>
+<p class="takeaway">MVP goal: fewer manual checks and less back-and-forth before confirming a booking.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>08</span></footer>
 
 <!--
 Timing: 0:55
 
-The salon MVP looks simple from the customer side: choose a service and find a time. But a valid appointment may depend on service duration, employee skills, schedules, rooms, chairs, equipment, add-ons, and several services in sequence. I focused on the PRD, data model, matching logic, and rules that connect those constraints. The potential business value is fewer scheduling conflicts, less manual coordination, and better use of staff and resources. This is still an MVP. Its job is to validate the rules and core booking flow before production work. Calendar and notification integrations are planned next steps, not completed features.
+The third problem looks simple from the customer side: choose a service and find a time. But an open calendar slot may still be invalid if the right employee, room, chair, or equipment is unavailable, or if several services need to happen in sequence. I focused on the PRD, data model, matching logic, and the rules connecting those constraints. The MVP checks those rules together before proposing a time. Its goal is fewer manual checks, less back-and-forth, and fewer scheduling conflicts. Calendar and notification integrations are planned next steps, not completed features.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
@@ -428,7 +450,7 @@ class: slide-closing
 
 <div class="closing-layout">
   <main>
-    <p class="closing-journey">From military service in Taiwan<br><span>to building AI products in New York.</span></p>
+    <p class="closing-journey">This summer changed how I think<br><span>about building useful products.</span></p>
     <h1>Still learning.<br>Still building.<br>Still halfway.</h1>
     <p class="thanks">With thanks to Taipei City, Universal Processing, the engineers, coworkers, and interns who shaped this summer.</p>
     <p class="thank-you">Thank you.</p>
@@ -448,7 +470,7 @@ class: slide-closing
 <!--
 Timing: 0:45
 
-When I think back to the interview I completed during military service, I could not have imagined that only a few months later I would be in New York presenting three AI projects I helped build. I am very grateful to Lewis, Tania, and the entire Universal Processing team for the trust, feedback, and freedom to experiment. I have really enjoyed working with the team, and I would be excited to continue contributing in a larger capacity beyond this internship. There is still a lot I hope to learn, build, and contribute. Thank you.
+When I look back on this summer, what matters most is not only the three AI projects. It is how the team taught me to connect business problems, technical decisions, and feedback. I am very grateful to Lewis, Tania, and the entire Universal Processing team for the trust, guidance, and freedom to experiment. I have really enjoyed working with the team, and I would be excited to continue contributing in a larger capacity beyond this internship. There is still a lot I hope to learn, build, and contribute. Thank you.
 
 [Sources]
 - User-provided internship brief, accessed 2026-07-24.
