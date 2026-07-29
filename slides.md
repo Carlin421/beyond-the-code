@@ -290,30 +290,29 @@ class: slide-booking
 ---
 
 <header class="slide-header">
-  <p class="kicker">Project 03 · Salon booking · MVP</p>
+  <p class="kicker">Project 03 · Salon booking product</p>
   <h1>Replace Paper Scheduling With One Booking System</h1>
 </header>
 
 <div class="booking-story">
   <p><span>problem</span>Many salon merchants still manage appointments with paper and pen.</p>
-  <p><span>solution / MVP</span>Plan one system for chat, phone, appointments, staff, and resources.</p>
+  <p><span>solution</span>One working system for chat, phone, appointments, staff, and resources.</p>
 </div>
 
 <div class="booking-map">
   <div class="constraint constraint-a"><span>service.duration</span><span>employee.skills</span><span>staff.schedule</span><span>multiService[]</span><span>addOns</span></div>
   <div class="media-slot booking-media">
-    <MediaFrame
-      src="/media/salon-booking.png"
-      alt="Salon booking assistant interface"
-      label="Current MVP interface · mock data"
-      fit="contain"
-      aspect="4 / 3"
+    <LocalNetworkEmbed
+      src="https://age-copper-theft-cognitive.trycloudflare.com"
+      fallback-src="/media/salon-booking.png"
+      title="Salon booking product live preview"
+      label="Live product demo · screenshot fallback available"
     />
   </div>
-  <div class="constraint constraint-b"><span>room</span><span>equipment</span><span>owner.admin</span><span>planned.chat</span><span>planned.phone</span></div>
+  <div class="constraint constraint-b"><span>room</span><span>equipment</span><span>owner.admin</span><span>text.booking</span><span>phone.booking</span></div>
 </div>
 
-<p class="takeaway">Two-week MVP: prove the scheduling rules before building the full system.</p>
+<p class="takeaway">Built end to end in two weeks; real-user validation is next.</p>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>08</span></footer>
 
 

@@ -847,9 +847,8 @@
   height: 335px;
 }
 
-.booking-media .media-frame__surface {
+.booking-media > * {
   height: 335px;
-  aspect-ratio: auto !important;
 }
 
 .constraint {
