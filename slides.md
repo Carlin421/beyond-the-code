@@ -338,7 +338,7 @@ class: slide-closing
   <main>
     <h1>I turn messy workflows into AI products people can trust.</h1>
     <p class="closing-next">I’m ready to keep building what comes next.</p>
-    <p class="thanks">With thanks to Taipei City, Universal Processing, the engineers, coworkers, and interns who shaped this summer.</p>
+    <p class="thanks">With thanks to Universal Processing, Taipei City, the engineers, coworkers, and interns who shaped this summer.</p>
     <p class="thank-you">Thank you.</p>
   </main>
   <div class="media-slot closing-media">
