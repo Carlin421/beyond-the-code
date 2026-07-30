@@ -277,11 +277,44 @@ class: slide-booking
 
 
 ---
+class: slide-evolution
+---
+
+<header class="slide-header">
+  <p class="kicker">04 / How AI changed my work</p>
+  <h1>How AI Changed the Way I Work</h1>
+</header>
+
+<div class="ai-evolution" aria-label="How Carlin's use of AI evolved">
+  <section>
+    <span>before</span>
+    <h2>Search</h2>
+    <p>Samples, documentation, and Stack Overflow.</p>
+  </section>
+  <b>→</b>
+  <section>
+    <span>then</span>
+    <h2>Assist</h2>
+    <p>Specific questions and small coding tasks.</p>
+  </section>
+  <b>→</b>
+  <section>
+    <span>now</span>
+    <h2>Direct</h2>
+    <p>I define, structure, and review; AI implements.</p>
+  </section>
+</div>
+
+<p class="takeaway">Less time writing every line. More time owning the product.</p>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>09</span></footer>
+
+
+---
 class: slide-judgment
 ---
 
 <header class="slide-header">
-  <p class="kicker">04 / How AI changed the work</p>
+  <p class="kicker">05 / Reflection</p>
   <h1>The Hard Part Is Deciding What AI Should Control</h1>
 </header>
 
@@ -292,7 +325,7 @@ class: slide-judgment
 </div>
 
 <p class="takeaway">AI can produce code. I own the product decisions and the result.</p>
-<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>09</span></footer>
+<footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>10</span></footer>
 
 
 ---
