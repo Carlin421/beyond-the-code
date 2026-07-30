@@ -48,10 +48,19 @@ class: slide-whoami
       aspect="4 / 5"
     />
   </div>
-  <section class="whoami-statement">
-    <p>Business + information systems background</p>
-    <h2>I connect user needs, business workflows, and engineering.</h2>
-  </section>
+  <div class="whoami-copy">
+    <section class="terminal-profile" aria-label="Carlin Hou profile">
+      <div><span>name</span><strong>Carlin Hou</strong></div>
+      <div><span>role</span><strong>Software Engineering Intern</strong></div>
+      <div><span>company</span><strong>Universal Processing</strong></div>
+      <div><span>background</span><strong>Business + Information Systems</strong></div>
+    </section>
+    <section class="whoami-statement">
+      <p>// what I bring</p>
+      <h2>I connect business, users, and engineering.</h2>
+      <p class="whoami-detail">Then I turn that context into AI products people can use.</p>
+    </section>
+  </div>
 </div>
 <footer class="slide-footer"><span>Carlin Hou · Internship Review</span><span>02</span></footer>
 
